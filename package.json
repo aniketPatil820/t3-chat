@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "auth:gen": "set PRISMA_CLIENT_ENGINE_TYPE=binary && npx auth@latest generate",
     "dev": "docker compose up -d && next dev",
     "build": "next build",
     "start": "next start",
@@ -10,7 +11,8 @@
   },
   "dependencies": {
     "@base-ui/react": "^1.4.1",
-    "@prisma/client": "^7.8.0",
+    "@prisma/client": "^5.22.0",
+    "better-auth": "^1.6.9",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "^1.1.1",
@@ -20,7 +22,7 @@
     "lucide-react": "^1.14.0",
     "next": "16.2.4",
     "next-themes": "^0.4.6",
-    "prisma": "^7.8.0",
+    "prisma": "^5.22.0",
     "radix-ui": "^1.4.3",
     "react": "19.2.4",
     "react-day-picker": "^9.14.0",
