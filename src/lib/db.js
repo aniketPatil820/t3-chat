@@ -1,12 +1,12 @@
 import { PrismaClient } from "@prisma/client";
 
 const db =
-  globalthis.prisma ||
+  globalThis.prisma ||
   new PrismaClient({
-    logs: ["query", "info", "warn", "error"],
+    log: ["query", "info", "warn", "error"],
   });
 
-if (process.env.NODE_ENV == "devlopment") {
+if (process.env.NODE_ENV == "development") {
   globalThis.prisma = db;
 }
 
