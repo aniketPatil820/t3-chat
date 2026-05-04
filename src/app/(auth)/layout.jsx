@@ -10,6 +10,6 @@ const AuthLayout = async ({ children }) => {
   if (session) {
     return redirect("/");
   }
-  return <div>{children}</div>;
+  return <>{children}</>;
 };
 export default AuthLayout;
